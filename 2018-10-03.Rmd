@@ -37,3 +37,10 @@ aVector<-c(5,6,7)
 a2Vector<-c(5L,6L,7L)
 ```
 
+```{r}
+library(lubridate)
+a <- seq(ymd("2001-01-01"),ymd("2018-09-01"),by="month")
+b <- seq(ymd("2001-01-01"),ymd("2018-09-01"),by="quarter")
+c <- seq(ymd("2001-01-01"),ymd("2018-09-01"),by="year")
+```
+
