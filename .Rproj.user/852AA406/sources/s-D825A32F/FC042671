@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539764011556.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1457242491",
+    "id" : "FC042671",
+    "lastKnownWriteTime" : 1539762735,
+    "last_content_update" : 1539766679759,
+    "path" : "~/GitHub/forClass/2018-10-17.Rmd",
+    "project_path" : "2018-10-17.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "27,61",
+        "scrollLine" : "13"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
