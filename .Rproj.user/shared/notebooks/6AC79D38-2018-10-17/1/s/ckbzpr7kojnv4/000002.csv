@@ -1,0 +1,5 @@
+"0","```r
+str_c(splitResult)->arrayResult
+```"
+"1","Error in str_c(splitResult) : could not find function \"str_c\"
+"
