@@ -230,11 +230,129 @@ In strsplit(code, &quot;\n&quot;, fixed = TRUE) :
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REZbMSwyXVxuYGBgIn0= -->
+<pre class="r"><code>StuDF[1,2]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIOWwj+aYjlxuTGV2ZWxzOiDlpKfnmb0g5aSn6ZuEIOWwj+aYjiDlsI/mlrAg6IOW6JmOXG4ifQ== -->
+<pre><code>[1] 小明
+Levels: 大白 大雄 小明 小新 胖虎</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REZbLDJdXG5gYGAifQ== -->
+<pre class="r"><code>StuDF[,2]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIOWwj+aYjiDlpKfpm4Qg6IOW6JmOIOWwj+aWsCDlpKfnmb1cbkxldmVsczog5aSn55m9IOWkp+mbhCDlsI/mmI4g5bCP5pawIOiDluiZjlxuIn0= -->
+<pre><code>[1] 小明 大雄 胖虎 小新 大白
+Levels: 大白 大雄 小明 小新 胖虎</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REZbMSxdXG5gYGAifQ== -->
+<pre class="r"><code>StuDF[1,]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6MX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVJzVTdETUJDOXhBNm9rU2hJL1k1bVFHS0dJUXNyTUhRMXJnc0JZMGUyQTN3UURDQWhOdmdTZm9LSm1hRmdwN21rY1NRbnorL3UzcjI3bkpXTHczeVJBMEFLSkVzZ0pSN1MxTDhTb0RBSjMwY0FNdk1nUkthQk9QNkI3aUY3YldJYkd4WHRTSEV2cFBYb3dKL01uOERTcDV2bnJ3Ri92UGU0ZnZrZDhLZEYvRmErZmtmS0daZk1vbkRmYnNXNDA4YWpOWm84dVVDVDQzTEY3Z1NXRXlUUFhYTmFkaGNhTWpCZ3VUWWlrcGdZL1ZDZ0RDNGcyU1NSdjhoWnZtU09GU3NUTkZ0M0k2bGRYYnRLS3krVXpybzliUmNuSmlMMkd4VWFMK2Y4dWxHMzg2UFFZREN3YlFhaVAwUFJXSVlyRStxcVV2MmdrbDBLMlYybWZzQjJ2cUkybFhJNGlXZHQ0YlJqbUpkekxaSFpiSDc5RDlPVEk5eFBBZ0FBIn0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["StuID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[2],"type":["fctr"],"align":["left"]},{"label":["score"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"小明","3":"80","_rn_":"1"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REZbYygxLDQpLF1cbmBgYCJ9 -->
+<pre class="r"><code>StuDF[c(1,4),]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMlJ2MDdETUJER3o3RURhaVFLVXArakdTb3gweUVMSTMrR3JpWjFJV0RzeUhHQWtZZUJBU1RFQmsvQ1N6QXhNeFRzeEplMHNaVGs4L255dSsvT3A5bGlsaXdTQUlpQXhnUWk2aVNMM0lzQWc1SC9QZ0RRaVJQK1pPd1RqMzZnV2ZNRENJdnVOWUEyaHcwQU8xTGNDVms1NWZOajkvZ29lN3ArL3VyMXgzdW55NWZmWG45V3FOK3kxKzhCT2M0bHJ4RGNsVnZ4M0dyajFCb056OCtENFpQSFlIZ2JvL2l0UUF6RjRKbXRqN093WVQ0REQ2cGNHekZBakl5K1R4R0R3eUQ5TU9qZndHV3k1SmFuSytPNWpkTXQzSzR1YmFHVmcwV1RNTFBObjRrWkJQWnI1WXN2cC9sVnJXNm1oNzVBTUVDQ0lSSk1vYVp0U1liR1loeWZVSmVGNnBxVi9FTElzQm03SnBzZTA5SVV5bUluTGxxbFZsdU9lVW11SlViYVcxai9BN2JTRnBkbkFnQUEifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["StuID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[2],"type":["fctr"],"align":["left"]},{"label":["score"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"小明","3":"80","_rn_":"1"},{"1":"4","2":"小新","3":"70","_rn_":"4"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REZbYygxLDQpLGMoMiwzKV1cbmBgYCJ9 -->
+<pre class="r"><code>StuDF[c(1,4),c(2,3)]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVFRVTdETUJCYzJ3bW9rU2hJZlVkenFNUzloMzRBeEtGWGs3b1FhdXpJZG9Famo0RURTSWdidklSUDhBUU9CVHZ4SnNXUk5oNlBkbWRuZkw1WXpvcGxBUUFVV0U2QU1nOHo2bjhFTWhpRjh3R0FUZG9HWUVmZENXMVgwbmdneFoyUTFxTVRYN212d0daUE44OWZBLzU0NzNIejhqUGdUNHY0YmZINm5Tam5sZVFXaGZ0MWExNDViVHphK1JvSFkvTUxhTC81MldNSEVobkZid1hLMEVobWdjUUdXMmtqa3FtUjBmY2xUbUorTXVSbnY0bXhZc1VkTDljbTZMYm0vc2tkNnNiVldua3hPb25QdEQ5TVRFSWNiMVZZdnBwVzExdTFtWjZHQmRFQWlZWklOTFdIdzhvTWplWDRZa0pkMWFvUEsvbWxrUEV5OWlIYmpHVmphdVV3aVdkdDZiVGoyRmRVV2lMVFBmenVEK01qMUVOQ0FnQUEifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["name"],"name":[1],"type":["fctr"],"align":["left"]},{"label":["score"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"小明","2":"80","_rn_":"1"},{"1":"小新","2":"70","_rn_":"4"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REZbYygxLDQpLF1cbmBgYCJ9 -->
+<pre class="r"><code>StuDF[c(1,4),]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMlJ2MDdETUJER3o3RURhaVFLVXArakdUcXcwaUVMSTMrR3JpWjFJV0RzeUhHQWtZZUJBU1RFQmsvQ1N6QXhNeFRzeEplMHNaVGs4L255dSsvT3A5bGlsaXdTQUlpQXhnUWk2aVNMM0lzQWc1SC9QZ0RRaVJQK1pPd1RqMzZnV2ZNRENJdnVOWUEyaHcwQU8xTGNDVms1NWZOajkvZ29lN3ArL3VyMXgzdW55NWZmWG45V3FOK3kxKzhCT2M0bHJ4RGNsVnZ4M0dyajFCb056OCtENFpQSFlIZ2JvL2l0UUF6RjRKbXRqN093WVQ0REQ2cGNHekZBakl5K1R4R0R3eUQ5TU9qZndHV3k1SmFuSytPNWpkTXQzSzR1YmFHVmcwV1RNTFBObjRrWkJQWnI1WXN2cC9sVnJXNm1oNzVBTUVDQ0lSSk1vYVp0U1liR1loeWZVSmVGNnBxVi9FTElzQm03SnBzZTA5SVV5bUluTGxxbFZsdU9lVW11SlViYVcxai9BOUMwOURKbkFnQUEifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["StuID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[2],"type":["fctr"],"align":["left"]},{"label":["score"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"小明","3":"80","_rn_":"1"},{"1":"4","2":"小新","3":"70","_rn_":"4"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REZbLWMoMSw0KSxdXG5gYGAifQ== -->
+<pre class="r"><code>StuDF[-c(1,4),]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6M30sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMlJzVTdETUJDR0wzRUNORklMVW5tTlptQmc3cENsQ3dOSXFLdEpYUWdZTzNKY1lPUmhZQUFKc2NHVDhCSThRb2VDTC9HbFRTSWw5L3Q4K2U0Lyt6eWJueVR6QkFCQ1lIRUFJWE15Q3QwbmdBZ0dHSjhBMk5nSjNCbGhuRUx6VEE5OFBQWUpZRU5maDRDNGhuUmhlMUk4Q0ZrNWRlUXJNQnU5M0w3K2JQWFhaNnZMdC9WV2YxZWtQN0wzM3g0NXppV3ZDTnkyVy9MY2F1UFVwalYvNWsxZlBqZHhSdWE3T01YdkJlRVlKUy9zYXBiNVJZUVZ0RkhsMm9nZVltRDBZMHFZM1lOaHplaFl6UDU2anBNRnR6eGRHbVRYcmp2SWZWM2FRaXNIRE1mKy9IWi9Ea3d2Y2JoU2FHQXh5VzlXNm01eWlnMmFXNm5mb1krc3E3RmxSTVppT2txaHJndlZEaXo1bFpCK01YS0Qxbk9tcFNtVXBVbGN0a3F0dHB6cWtseEx5alEzc3ZrSHowU0tWMzhDQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["StuID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[2],"type":["fctr"],"align":["left"]},{"label":["score"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"2","2":"大雄","3":"60","_rn_":"2"},{"1":"3","2":"胖虎","3":"90","_rn_":"3"},{"1":"5","2":"大白","3":"50","_rn_":"5"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShsdWJyaWRhdGUpXG5saWJyYXJ5KHN0cmluZ3IpXG5saWJyYXJ5KGdvb2dsZXNoZWV0cylcbmdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKVxuYGBgIn0= -->
+<pre class="r"><code>library(lubridate)
+library(stringr)
+library(googlesheets)
+gs_auth(new_user = TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRGlzYWJsaW5nIC5odHRyLW9hdXRoIGJ5IHJlbmFtaW5nIHRvIC5odHRyLW9hdXRoLVNVU1BFTkRFRFxuUmVtb3ZpbmcgZ29vZ2xlIHRva2VuIHN0YXNoZWQgaW50ZXJuYWxseSBpbiAnZ29vZ2xlc2hlZXRzJy5cbmh0dHB1diBub3QgaW5zdGFsbGVkLCBkZWZhdWx0aW5nIHRvIG91dC1vZi1iYW5kIGF1dGhlbnRpY2F0aW9uXG4ifQ== -->
+<pre><code>Disabling .httr-oauth by renaming to .httr-oauth-SUSPENDED
+Removing google token stashed internally in 'googlesheets'.
+httpuv not installed, defaulting to out-of-band authentication</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuNC9nUUExNFgzeTFaZVNhV1AzLVhuRTI2X0dlSzhRbzVzVWowSlZoSWNwRlB3R0ttc3FrOVZOSTgwXG5nc1N1cnZleTwtZ3Nfa2V5KFwiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREVcIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3RcbmBgYCJ9 -->
+<pre class="r"><code>4/gQA14X3y1ZeSaWP3-XnE26_GeK8Qo5sUj0JVhIcpFPwGKmsqk9VNI80
+gsSurvey&lt;-gs_key(&quot;1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE&quot;)  #download sheet information as an object</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU2hlZXQgc3VjY2Vzc2Z1bGx5IGlkZW50aWZpZWQ6IFwipf6vWrNxsFS//SAoUmVzcG9uc2VzKVwiXG4ifQ== -->
+<pre><code>Sheet successfully identified: &quot;愼㸵昼㹥愼㹦Z戼㸳q戼㸰T戼㹦昼㹤 (Responses)&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldFxuYGBgIn0= -->
+<pre class="r"><code>classSurvey&lt;-gs_read(gsSurvey,ws=1) #access the 1st worksheet</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQWNjZXNzaW5nIHdvcmtzaGVldCB0aXRsZWQgJ0Zvcm0gUmVzcG9uc2VzIDEnLlxuIn0= -->
+<pre><code>Accessing worksheet titled 'Form Responses 1'.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Eb3dubG9hZGluZzogMi4yIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjIga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMiBrQiAgICAgXG5Eb3dubG9hZGluZzogMi4yIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjIga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMiBrQiAgICAgXG4ifQ== -->
+<pre><code>
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBFbWFpbCBBZGRyZXNzYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqW2mVyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgvse4uSA9IGNvbF9pbnRlZ2VyKCksXG4gIKl+pu2mYabmrEawzyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqcqnTyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgpbu+x7TBvsekwLzGID0gY29sX2ludGVnZXIoKSxcbiAgpbu+x7TBpdirZaR3sNGlW6SnvdKlfqyhsMogPSBjb2xfY2hhcmFjdGVyKClcbilcbiJ9 -->
+<pre><code>Parsed with column specification:
+cols(
+  Timestamp = col_character(),
+  `Email Address` = col_character(),
+  愼㸹m愼㸶W = col_character(),
+  戼㹥Ǹ戼㸹 = col_integer(),
+  愼㸹~愼㸶攼㹤愼㸶a愼㸶攼㸶愼㹣F戼㸰挼㹦 = col_character(),
+  愼㸹ʧO = col_character(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱戼㹥Ǥ挼㸰戼㹣挼㸶 = col_integer(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱愼㸵ثe愼㸴w戼㸰ѥ[愼㸴愼㸷戼㹤ҥ~愼㹣愼㸱戼㸰挼㹡 = col_character()
+)</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMjQiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NClN0dURGIDwtIGRhdGEuZnJhbWUoDQogIFN0dUlEPWMoMSwyLDMsNCw1KSwNCiAgbmFtZT1jKCLlsI/mmI4iLCLlpKfpm4QiLCLog5bomY4iLCLlsI/mlrAiLCLlpKfnmb0iKSwNCiAgc2NvcmU9Yyg4MCw2MCw5MCw3MCw1MCkNCiAgKQ0KU3R1REYgDQpgYGANCg0KYGBge3J9DQpuYW1lcyhTdHVERikgDQpjb2xuYW1lcyhTdHVERikNCmBgYA0KDQpgYGB7cn0NCnJvd25hbWVzKFN0dURGKQ0KYGBgDQoNCmBgYHtyfQ0KDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMjQiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NClN0dURGIDwtIGRhdGEuZnJhbWUoDQogIFN0dUlEPWMoMSwyLDMsNCw1KSwNCiAgbmFtZT1jKCLlsI/mmI4iLCLlpKfpm4QiLCLog5bomY4iLCLlsI/mlrAiLCLlpKfnmb0iKSwNCiAgc2NvcmU9Yyg4MCw2MCw5MCw3MCw1MCkNCiAgKQ0KU3R1REYgDQpgYGANCg0KYGBge3J9DQpuYW1lcyhTdHVERikgDQpjb2xuYW1lcyhTdHVERikNCmBgYA0KDQpgYGB7cn0NCnJvd25hbWVzKFN0dURGKQ0KYGBgDQoNCmBgYHtyfQ0KU3R1REZbMSwyXQ0KU3R1REZbLDJdDQpTdHVERlsxLF0NClN0dURGW2MoMSw0KSxdDQpTdHVERltjKDEsNCksYygyLDMpXQ0KYGBgDQoNCmBgYHtyfQ0KU3R1REZbYygxLDQpLF0NClN0dURGWy1jKDEsNCksXQ0KYGBgDQoNCg0KYGBge3J9DQpsaWJyYXJ5KGx1YnJpZGF0ZSkNCmxpYnJhcnkoc3RyaW5ncikNCmxpYnJhcnkoZ29vZ2xlc2hlZXRzKQ0KZ3NfYXV0aChuZXdfdXNlciA9IFRSVUUpDQpnc1N1cnZleTwtZ3Nfa2V5KCIxbUM5Ym54ajExTkNOb09DdzBWbW40bnhFUmJIdExqZUdvOXY5QzliMkdERSIpICAjZG93bmxvYWQgc2hlZXQgaW5mb3JtYXRpb24gYXMgYW4gb2JqZWN0DQpjbGFzc1N1cnZleTwtZ3NfcmVhZChnc1N1cnZleSx3cz0xKSAjYWNjZXNzIHRoZSAxc3Qgd29ya3NoZWV0DQpgYGANCg0K</div>
 
 
 
