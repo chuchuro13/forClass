@@ -1,14 +1,23 @@
 "0","library(lubridate)"
+"2","
+Attaching package: ¡¥lubridate¡¦
+
+"
+"2","The following object is masked from ¡¥package:base¡¦:
+
+    date
+
+"
 "0","library(stringr)"
 "0","library(googlesheets)"
 "0","gs_auth(new_user = TRUE)"
 "2","Disabling .httr-oauth by renaming to .httr-oauth-SUSPENDED
 "
-"2","Removing google token stashed internally in 'googlesheets'.
+"2","No token currently in force.
 "
 "2","httpuv not installed, defaulting to out-of-band authentication
 "
-"0","4/gQA14X3y1ZeSaWP3-XnE26_GeK8Qo5sUj0JVhIcpFPwGKmsqk9VNI80"
+"0","4/gQB4DNQq2so4DAzUHwGh-f6cgp8qVLEnyI6F-xVPZnBsd2KqDoz31yw"
 "0","gsSurvey<-gs_key(""1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE"")  #download sheet information as an object"
 "2","Sheet successfully identified: ""¥þ¯Z³q°T¿ý (Responses)""
 "
@@ -22,16 +31,16 @@
 "1","2.2 kB"
 "1","     "
 "1","Downloading: "
-"1","2.2 kB"
+"1","2.3 kB"
 "1","     "
 "1","Downloading: "
-"1","2.2 kB"
+"1","2.3 kB"
 "1","     "
 "1","Downloading: "
-"1","2.2 kB"
+"1","2.3 kB"
 "1","     "
 "1","Downloading: "
-"1","2.2 kB"
+"1","2.3 kB"
 "1","     "
 "2","Parsed with column specification:
 cols(
