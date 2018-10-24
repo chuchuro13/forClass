@@ -178,11 +178,63 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REYgPC0gZGF0YS5mcmFtZShcbiAgU3R1SUQ9YygxLDIsMyw0LDUpLFxuICBuYW1lPWMoXCLlsI/mmI5cIixcIuWkp+mbhFwiLFwi6IOW6JmOXCIsXCLlsI/mlrBcIixcIuWkp+eZvVwiKSxcbiAgc2NvcmU9Yyg4MCw2MCw5MCw3MCw1MClcbiAgKVxuYGBgIn0= -->
+<pre class="r"><code>StuDF &lt;- data.frame(
+  StuID=c(1,2,3,4,5),
+  name=c(&quot;小明&quot;,&quot;大雄&quot;,&quot;胖虎&quot;,&quot;小新&quot;,&quot;大白&quot;),
+  score=c(80,60,90,70,50)
+  )</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZyBtZXNzYWdlOlxuSW4gc3Ryc3BsaXQoY29kZSwgXCJcXG5cIiwgZml4ZWQgPSBUUlVFKSA6XG4gIGlucHV0IHN0cmluZyAxIGlzIGludmFsaWQgaW4gdGhpcyBsb2NhbGVcbiJ9 -->
+<pre><code>Warning message:
+In strsplit(code, &quot;\n&quot;, fixed = TRUE) :
+  input string 1 is invalid in this locale</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REYgXG5gYGAifQ== -->
+<pre class="r"><code>StuDF </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6NX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMlFTMDdETUJDR3A3WURORktyU3VVY1dmUUNkSkZOTjBnOGhMcTFnb3RTR1R0eXpHUEpZV0FCRW1JSEorRVNyRml6S05qSlRFdGlLZm4vakNmZlBFN3o1U3hkcGdEQWdDY0RZRHhZd2NKckFBS0dVZThCK0RTWWVETU9UM0wwRGMyWkErb0I2Z1QxRUMrQWoySSsvc3ZRaXdiZUxiS24xYTNTZFhBVHpJcFI4YmgrK3R6NTk3ZXRyNTUvZHY2akp2K2F2M3oxeUVtaFpVM2diYm1WTEx4MXdXMW9xUGs1Tm4rTWV2SFE2Z25xZ29icTRvMjhWb1RuRkR6ek40c2NQMFRNb0l1NnNFNzFFRU5uN3pMQ3hJV3h0bUpjUTB6a3Y3M3UwMHZwWmJaeWtkdE0wTUh0MjhxWDFnUVltK0syNDVCcHUvWG1qTkFuL3p4dk1ZS0tDVnFWTWxlbG9RSEdvZGVtMWF4eXBmSFVVSWpXbWJkZWFvb1VWbE9rcmIvNUEyc1B4ZmxxQWdBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["StuID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[2],"type":["fctr"],"align":["left"]},{"label":["score"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"小明","3":"80"},{"1":"2","2":"大雄","3":"60"},{"1":"3","2":"胖虎","3":"90"},{"1":"4","2":"小新","3":"70"},{"1":"5","2":"大白","3":"50"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMoU3R1REYpIFxuYGBgIn0= -->
+<pre class="r"><code>names(StuDF) </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiU3R1SURcIiBcIm5hbWVcIiAgXCJzY29yZVwiXG4ifQ== -->
+<pre><code>[1] &quot;StuID&quot; &quot;name&quot;  &quot;score&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sbmFtZXMoU3R1REYpXG5gYGAifQ== -->
+<pre class="r"><code>colnames(StuDF)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiU3R1SURcIiBcIm5hbWVcIiAgXCJzY29yZVwiXG4ifQ== -->
+<pre><code>[1] &quot;StuID&quot; &quot;name&quot;  &quot;score&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm93bmFtZXMoU3R1REYpXG5gYGAifQ== -->
+<pre class="r"><code>rownames(StuDF)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMVwiIFwiMlwiIFwiM1wiIFwiNFwiIFwiNVwiXG4ifQ== -->
+<pre><code>[1] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; &quot;5&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMjQiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCg0KYGBgDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMjQiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NClN0dURGIDwtIGRhdGEuZnJhbWUoDQogIFN0dUlEPWMoMSwyLDMsNCw1KSwNCiAgbmFtZT1jKCLlsI/mmI4iLCLlpKfpm4QiLCLog5bomY4iLCLlsI/mlrAiLCLlpKfnmb0iKSwNCiAgc2NvcmU9Yyg4MCw2MCw5MCw3MCw1MCkNCiAgKQ0KU3R1REYgDQpgYGANCg0KYGBge3J9DQpuYW1lcyhTdHVERikgDQpjb2xuYW1lcyhTdHVERikNCmBgYA0KDQpgYGB7cn0NCnJvd25hbWVzKFN0dURGKQ0KYGBgDQoNCmBgYHtyfQ0KDQpgYGANCg0K</div>
 
 
 
