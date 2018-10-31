@@ -355,8 +355,92 @@ sum(a)</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMoU3R1REYpXG5gYGAifQ== -->
+<pre class="r"><code>names(StuDF)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiU3R1SURcIiBcIm5hbWVcIiAgXCJzY29yZVwiXG4ifQ== -->
+<pre><code>[1] &quot;StuID&quot; &quot;name&quot;  &quot;score&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMoU3R1REYpIDwtIGMoXCLlrbjomZ9cIixcIuWnk+WQjVwiLFwi5oiQ57i+XCIpXG5gYGAifQ== -->
+<pre class="r"><code>names(StuDF) &lt;- c(&quot;學號&quot;,&quot;姓名&quot;,&quot;成績&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZyBtZXNzYWdlOlxuSW4gc3Ryc3BsaXQoY29kZSwgXCJcXG5cIiwgZml4ZWQgPSBUUlVFKSA6XG4gIGlucHV0IHN0cmluZyAxIGlzIGludmFsaWQgaW4gdGhpcyBsb2NhbGVcbiJ9 -->
+<pre><code>Warning message:
+In strsplit(code, &quot;\n&quot;, fixed = TRUE) :
+  input string 1 is invalid in this locale</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMoU3R1REYpXG5gYGAifQ== -->
+<pre class="r"><code>names(StuDF)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwi5a246JmfXCIgXCLlp5PlkI1cIiBcIuaIkOe4vlwiXG4ifQ== -->
+<pre><code>[1] &quot;學號&quot; &quot;姓名&quot; &quot;成績&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbmBgYCJ9 -->
+<pre class="r"><code>library(readr)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZyBtZXNzYWdlOlxuSW4gc3Ryc3BsaXQoY29kZSwgXCJcXG5cIiwgZml4ZWQgPSBUUlVFKSA6XG4gIGlucHV0IHN0cmluZyAxIGlzIGludmFsaWQgaW4gdGhpcyBsb2NhbGVcbiJ9 -->
+<pre><code>Warning message:
+In strsplit(code, &quot;\n&quot;, fixed = TRUE) :
+  input string 1 is invalid in this locale</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudCA8LSByZWFkX2NzdihcImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvc3R1ZGVudC5jc3ZcIilcbmBgYCJ9 -->
+<pre class="r"><code>student &lt;- read_csv(&quot;https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICCkSr7Hpn4gPSBjb2xfY2hhcmFjdGVyKCksXG4gIKVYpc2mYSA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqcqnTyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqK2wqiA9IGNvbF9kb3VibGUoKVxuKVxuIn0= -->
+<pre><code>Parsed with column specification:
+cols(
+  愼㸴J戼㹥Ǧ~ = col_character(),
+  愼㸵X愼㸵ͦa = col_character(),
+  愼㸹ʧO = col_character(),
+  愼㸸愼㹤戼㸰愼㹡 = col_double()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkobWFncml0dHIpXG5zdHVkZW50ICU8PiUgbXV0YXRlKFxuICDouqvpq5jntJrot509Y3V0KOi6q+mrmCxjKDAsMTUwLDE1NSwxNjAsMTY1LDE3MCwxNzUsMTgwLDE4NSwyMDApKSlcbmxldmVscyhzdHVkZW50JOi6q+mrmOe0mui3nSlcbmBgYCJ9 -->
+<pre class="r"><code>library(dplyr)
+library(magrittr)
+student %&lt;&gt;% mutate(
+  身高級距=cut(身高,c(0,150,155,160,165,170,175,180,185,200)))
+levels(student$身高級距)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiKDAsMTUwXVwiICAgXCIoMTUwLDE1NV1cIiBcIigxNTUsMTYwXVwiIFwiKDE2MCwxNjVdXCIgXCIoMTY1LDE3MF1cIiBcIigxNzAsMTc1XVwiXG5bN10gXCIoMTc1LDE4MF1cIiBcIigxODAsMTg1XVwiIFwiKDE4NSwyMDBdXCJcbiJ9 -->
+<pre><code>[1] &quot;(0,150]&quot;   &quot;(150,155]&quot; &quot;(155,160]&quot; &quot;(160,165]&quot; &quot;(165,170]&quot; &quot;(170,175]&quot;
+[7] &quot;(175,180]&quot; &quot;(180,185]&quot; &quot;(185,200]&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKHN0dWRlbnQk6Lqr6auY57Sa6LedKSA8LSBjKFwi5bCP5YCL5a2QXCIsXCLlsI/lgIvlrZBcIixcIuWwj+WAi+WtkFwiLFwi5bCP5YCL5a2QXCIsXCLlsI/lgIvlrZBcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgXCLkuK3nrYnlgIvlrZBcIixcIuS4reetieWAi+WtkFwiLFwi6auY5YCL5a2QXCIsXCLpq5jlgIvlrZBcIilcbmBgYCJ9 -->
+<pre class="r"><code>levels(student$身高級距) &lt;- c(&quot;小個子&quot;,&quot;小個子&quot;,&quot;小個子&quot;,&quot;小個子&quot;,&quot;小個子&quot;,
+                          &quot;中等個子&quot;,&quot;中等個子&quot;,&quot;高個子&quot;,&quot;高個子&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZyBtZXNzYWdlczpcbjE6IEluIGdyZXBsKFwifHx8XCIsIHdoYXQsIGZpeGVkID0gVFJVRSkgOlxuICBpbnB1dCBzdHJpbmcgMSBpcyBpbnZhbGlkIGluIHRoaXMgbG9jYWxlXG4yOiBJbiBzdHJzcGxpdChjb2RlLCBcIlxcblwiLCBmaXhlZCA9IFRSVUUpIDpcbiAgaW5wdXQgc3RyaW5nIDEgaXMgaW52YWxpZCBpbiB0aGlzIGxvY2FsZVxuIn0= -->
+<pre><code>Warning messages:
+1: In grepl(&quot;|||&quot;, what, fixed = TRUE) :
+  input string 1 is invalid in this locale
+2: In strsplit(code, &quot;\n&quot;, fixed = TRUE) :
+  input string 1 is invalid in this locale</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKHN0dWRlbnQk6Lqr6auY57Sa6LedKVxuYGBgIn0= -->
+<pre class="r"><code>levels(student$身高級距)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwi5bCP5YCL5a2QXCIgICBcIuS4reetieWAi+WtkFwiIFwi6auY5YCL5a2QXCIgIFxuIn0= -->
+<pre><code>[1] &quot;小個子&quot;   &quot;中等個子&quot; &quot;高個子&quot;  </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMzEiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHIpDQpsaWJyYXJ5KGdvb2dsZXNoZWV0cykNCmdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKQ0KZ3NTdXJ2ZXk8LWdzX2tleSgiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREUiKSAgI2Rvd25sb2FkIHNoZWV0IGluZm9ybWF0aW9uIGFzIGFuIG9iamVjdA0KY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldA0KY2xhc3MoY2xhc3NTdXJ2ZXkpDQpTdHVERiA8LSBkYXRhLmZyYW1lKA0KICBTdHVJRD1jKDEsMiwzLDQsNSksDQogIG5hbWU9Yygi5bCP5piOIiwi5aSn6ZuEIiwi6IOW6JmOIiwi5bCP5pawIiwi5aSn55m9IiksDQogIHNjb3JlPWMoODAsNjAsOTAsNzAsNTApDQogICkNClN0dURGIA0KbmFtZXMoU3R1REYpIA0KY29sbmFtZXMoU3R1REYpDQpyb3duYW1lcyhTdHVERikNCmBgYA0KDQpgYGB7cn0NClN0dURGWzEsMl0NClN0dURGWywyXQ0KU3R1REZbMSxdDQpTdHVERltjKDEsNCksXQ0KU3R1REZbYygxLDQpLGMoMiwzKV0NCmBgYA0KDQpgYGB7cn0NClN0dURGW2MoMSw0KSxdDQpTdHVERlstYygxLDQpLF0NCmBgYA0KDQpgYGB7cn0NCmE8LWMoVCxULEYsRixULEYsRikNCnN1bShhKQ0KYGBgDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMzEiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHIpDQpsaWJyYXJ5KGdvb2dsZXNoZWV0cykNCmdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKQ0KZ3NTdXJ2ZXk8LWdzX2tleSgiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREUiKSAgI2Rvd25sb2FkIHNoZWV0IGluZm9ybWF0aW9uIGFzIGFuIG9iamVjdA0KY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldA0KY2xhc3MoY2xhc3NTdXJ2ZXkpDQpTdHVERiA8LSBkYXRhLmZyYW1lKA0KICBTdHVJRD1jKDEsMiwzLDQsNSksDQogIG5hbWU9Yygi5bCP5piOIiwi5aSn6ZuEIiwi6IOW6JmOIiwi5bCP5pawIiwi5aSn55m9IiksDQogIHNjb3JlPWMoODAsNjAsOTAsNzAsNTApDQogICkNClN0dURGIA0KbmFtZXMoU3R1REYpIA0KY29sbmFtZXMoU3R1REYpDQpyb3duYW1lcyhTdHVERikNCmBgYA0KDQpgYGB7cn0NClN0dURGWzEsMl0NClN0dURGWywyXQ0KU3R1REZbMSxdDQpTdHVERltjKDEsNCksXQ0KU3R1REZbYygxLDQpLGMoMiwzKV0NCmBgYA0KDQpgYGB7cn0NClN0dURGW2MoMSw0KSxdDQpTdHVERlstYygxLDQpLF0NCmBgYA0KDQpgYGB7cn0NCmE8LWMoVCxULEYsRixULEYsRikNCnN1bShhKQ0KYGBgDQoNCmBgYHtyfQ0KbmFtZXMoU3R1REYpDQpgYGANCg0KYGBge3J9DQpuYW1lcyhTdHVERikgPC0gYygi5a246JmfIiwi5aeT5ZCNIiwi5oiQ57i+IikNCm5hbWVzKFN0dURGKQ0KYGBgDQoNCmBgYHtyfQ0KbGlicmFyeShyZWFkcikNCnN0dWRlbnQgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvc3R1ZGVudC5jc3YiKQ0KbGlicmFyeShkcGx5cikNCmxpYnJhcnkobWFncml0dHIpDQpzdHVkZW50ICU8PiUgbXV0YXRlKA0KICDouqvpq5jntJrot509Y3V0KOi6q+mrmCxjKDAsMTUwLDE1NSwxNjAsMTY1LDE3MCwxNzUsMTgwLDE4NSwyMDApKSkNCmxldmVscyhzdHVkZW50JOi6q+mrmOe0mui3nSkNCmBgYA0KDQpgYGB7cn0NCmxldmVscyhzdHVkZW50JOi6q+mrmOe0mui3nSkgPC0gYygi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgIuS4reetieWAi+WtkCIsIuS4reetieWAi+WtkCIsIumrmOWAi+WtkCIsIumrmOWAi+WtkCIpDQpsZXZlbHMoc3R1ZGVudCTouqvpq5jntJrot50pDQpgYGANCg0K</div>
 
 
 

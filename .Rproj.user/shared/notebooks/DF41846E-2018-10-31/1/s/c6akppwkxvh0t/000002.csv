@@ -1,0 +1,23 @@
+"0","levels(student$身高級距) <- c(""小個子"",""小個子"",""小個子"",""小個子"",""小個子"","
+"0","                          ""中等個子"",""中等個子"",""高個子"",""高個子"")"
+"2","Warning messages:
+"
+"2","1: "
+"2","In grepl(""|||"", what, fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"2","2: "
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","levels(student$身高級距)"
+"1","[1]"
+"1"," ""小個子""  "
+"1"," ""中等個子"""
+"1"," ""高個子""  "
+"1","
+"
