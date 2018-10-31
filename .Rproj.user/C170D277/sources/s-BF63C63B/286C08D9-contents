@@ -10,15 +10,7 @@ gs_auth(new_user = TRUE)
 gsSurvey<-gs_key("1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE")  #download sheet information as an object
 classSurvey<-gs_read(gsSurvey,ws=1) #access the 1st worksheet
 class(classSurvey)
-StuDF <- data.frame(
-  StuID=c(1,2,3,4,5),
-  name=c("小明","大雄","胖虎","小新","大白"),
-  score=c(80,60,90,70,50)
-  )
-StuDF 
-names(StuDF) 
-colnames(StuDF)
-rownames(StuDF)
+
 ```
 
 ```{r}
@@ -63,4 +55,21 @@ levels(student$身高級距) <- c("小個子","小個子","小個子","小個子
                           "中等個子","中等個子","高個子","高個子")
 levels(student$身高級距)
 ```
+
+
+```{r}
+library(readr)
+library(googlesheets)
+gs_auth(new_user = TRUE)
+gsSurvey<-gs_key("1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE")  #download sheet information as an object
+classSurvey<-gs_read(gsSurvey,ws=1) #access the 1st worksheet
+class(classSurvey)
+
+```
+
+```{r}
+dim(classSurvey)
+```
+
+
 

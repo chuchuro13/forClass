@@ -178,97 +178,15 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbmBgYCJ9 -->
-<pre class="r"><code>library(readr)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbmxpYnJhcnkoZ29vZ2xlc2hlZXRzKVxuZ3NfYXV0aChuZXdfdXNlciA9IFRSVUUpXG5nc1N1cnZleTwtZ3Nfa2V5KFwiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREVcIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3RcbmNsYXNzU3VydmV5PC1nc19yZWFkKGdzU3VydmV5LHdzPTEpICNhY2Nlc3MgdGhlIDFzdCB3b3Jrc2hlZXRcbmNsYXNzKGNsYXNzU3VydmV5KVxuXG5gYGAifQ== -->
+<pre class="r"><code>library(readr)
+library(googlesheets)
+gs_auth(new_user = TRUE)
+gsSurvey&lt;-gs_key(&quot;1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE&quot;)  #download sheet information as an object
+classSurvey&lt;-gs_read(gsSurvey,ws=1) #access the 1st worksheet
+class(classSurvey)
+</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZyBtZXNzYWdlOlxuSW4gc3Ryc3BsaXQoY29kZSwgXCJcXG5cIiwgZml4ZWQgPSBUUlVFKSA6XG4gIGlucHV0IHN0cmluZyAxIGlzIGludmFsaWQgaW4gdGhpcyBsb2NhbGVcbiJ9 -->
-<pre><code>Warning message:
-In strsplit(code, &quot;\n&quot;, fixed = TRUE) :
-  input string 1 is invalid in this locale</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnb29nbGVzaGVldHMpXG5nc19hdXRoKG5ld191c2VyID0gVFJVRSlcbmBgYCJ9 -->
-<pre class="r"><code>library(googlesheets)
-gs_auth(new_user = TRUE)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRGlzYWJsaW5nIC5odHRyLW9hdXRoIGJ5IHJlbmFtaW5nIHRvIC5odHRyLW9hdXRoLVNVU1BFTkRFRFxuTm8gdG9rZW4gY3VycmVudGx5IGluIGZvcmNlLlxuaHR0cHV2IG5vdCBpbnN0YWxsZWQsIGRlZmF1bHRpbmcgdG8gb3V0LW9mLWJhbmQgYXV0aGVudGljYXRpb25cbiJ9 -->
-<pre><code>Disabling .httr-oauth by renaming to .httr-oauth-SUSPENDED
-No token currently in force.
-httpuv not installed, defaulting to out-of-band authentication</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuNC9oZ0JCZDlKLWZaVWd0c2dJd0piUUV1S09IYXYwNWhNdFdsbFYwRjZFc1RMaTQ4TXRDeFNKbTJFXG5nc1N1cnZleTwtZ3Nfa2V5KFwiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREVcIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3RcbmBgYCJ9 -->
-<pre class="r"><code>4/hgBBd9J-fZUgtsgIwJbQEuKOHav05hMtWllV0F6EsTLi48MtCxSJm2E
-gsSurvey&lt;-gs_key(&quot;1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE&quot;)  #download sheet information as an object</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiU2hlZXQgc3VjY2Vzc2Z1bGx5IGlkZW50aWZpZWQ6IFwipf6vWrNxsFS//SAoUmVzcG9uc2VzKVwiXG4ifQ== -->
-<pre><code>Sheet successfully identified: &quot;愼㸵昼㹥愼㹦Z戼㸳q戼㸰T戼㹦昼㹤 (Responses)&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldFxuYGBgIn0= -->
-<pre class="r"><code>classSurvey&lt;-gs_read(gsSurvey,ws=1) #access the 1st worksheet</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiQWNjZXNzaW5nIHdvcmtzaGVldCB0aXRsZWQgJ0Zvcm0gUmVzcG9uc2VzIDEnLlxuIn0= -->
-<pre><code>Accessing worksheet titled 'Form Responses 1'.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5Eb3dubG9hZGluZzogMS40IGtCICAgICBcbkRvd25sb2FkaW5nOiAxLjQga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMyBrQiAgICAgXG5Eb3dubG9hZGluZzogMi4zIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjMga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMyBrQiAgICAgXG4ifQ== -->
-<pre><code>
-Downloading: 1.4 kB     
-Downloading: 1.4 kB     
-Downloading: 2.3 kB     
-Downloading: 2.3 kB     
-Downloading: 2.3 kB     
-Downloading: 2.3 kB     </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBFbWFpbCBBZGRyZXNzYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqW2mVyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgvse4uSA9IGNvbF9pbnRlZ2VyKCksXG4gIKl+pu2mYabmrEawzyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqcqnTyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgpbu+x7TBvsekwLzGID0gY29sX2ludGVnZXIoKSxcbiAgpbu+x7TBpdirZaR3sNGlW6SnvdKlfqyhsMogPSBjb2xfY2hhcmFjdGVyKClcbilcbiJ9 -->
-<pre><code>Parsed with column specification:
-cols(
-  Timestamp = col_character(),
-  `Email Address` = col_character(),
-  愼㸹m愼㸶W = col_character(),
-  戼㹥Ǹ戼㸹 = col_integer(),
-  愼㸹~愼㸶攼㹤愼㸶a愼㸶攼㸶愼㹣F戼㸰挼㹦 = col_character(),
-  愼㸹ʧO = col_character(),
-  愼㸵戼㹢戼㹥Ǵ挼㸱戼㹥Ǥ挼㸰戼㹣挼㸶 = col_integer(),
-  愼㸵戼㹢戼㹥Ǵ挼㸱愼㸵ثe愼㸴w戼㸰ѥ[愼㸴愼㸷戼㹤ҥ~愼㹣愼㸱戼㸰挼㹡 = col_character()
-)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoY2xhc3NTdXJ2ZXkpXG5gYGAifQ== -->
-<pre class="r"><code>class(classSurvey)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwidGJsX2RmXCIgICAgIFwidGJsXCIgICAgICAgIFwiZGF0YS5mcmFtZVwiXG4ifQ== -->
-<pre><code>[1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuU3R1REYgPC0gZGF0YS5mcmFtZShcbiAgU3R1SUQ9YygxLDIsMyw0LDUpLFxuICBuYW1lPWMoXCLlsI/mmI5cIixcIuWkp+mbhFwiLFwi6IOW6JmOXCIsXCLlsI/mlrBcIixcIuWkp+eZvVwiKSxcbiAgc2NvcmU9Yyg4MCw2MCw5MCw3MCw1MClcbiAgKVxuU3R1REYgXG5gYGAifQ== -->
-<pre class="r"><code>StuDF &lt;- data.frame(
-  StuID=c(1,2,3,4,5),
-  name=c(&quot;小明&quot;,&quot;大雄&quot;,&quot;胖虎&quot;,&quot;小新&quot;,&quot;大白&quot;),
-  score=c(80,60,90,70,50)
-  )
-StuDF </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6NX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMlFTMDdETUJDR3A3WURORktyU3VVY1dmUUNkSkZOTjBnOGhMcTFnb3RTR1R0eXpHUEpZV0FCRW1JSEorRVNyRml6S05qSlRFdGlLZm4vakNmZlBFN3o1U3hkcGdEQWdDY0RZRHhZd2NKckFBS0dVZThCK0RTWWVETU9UM0wwRGMyWkErb0I2Z1QxRUMrQWoySSsvc3ZRaXdiZUxiS24xYTNTZFhBVHpJcFI4YmgrK3R6NTk3ZXRyNTUvZHY2akp2K2F2M3oxeUVtaFpVM2diYm1WTEx4MXdXMW9xUGs1Tm4rTWV2SFE2Z25xZ29icTRvMjhWb1RuRkR6ek40c2NQMFRNb0l1NnNFNzFFRU5uN3pMQ3hJV3h0bUpjUTB6a3Y3M3UwMHZwWmJaeWtkdE0wTUh0MjhxWDFnUVltK0syNDVCcHUvWG1qTkFuL3p4dk1ZS0tDVnFWTWxlbG9RSEdvZGVtMWF4eXBmSFVVSWpXbWJkZWFvb1VWbE9rcmIvNUEyc1B4ZmxxQWdBQSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["StuID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[2],"type":["fctr"],"align":["left"]},{"label":["score"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"小明","3":"80"},{"1":"2","2":"大雄","3":"60"},{"1":"3","2":"胖虎","3":"90"},{"1":"4","2":"小新","3":"70"},{"1":"5","2":"大白","3":"50"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMoU3R1REYpIFxuYGBgIn0= -->
-<pre class="r"><code>names(StuDF) </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiU3R1SURcIiBcIm5hbWVcIiAgXCJzY29yZVwiXG4ifQ== -->
-<pre><code>[1] &quot;StuID&quot; &quot;name&quot;  &quot;score&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sbmFtZXMoU3R1REYpXG5gYGAifQ== -->
-<pre class="r"><code>colnames(StuDF)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiU3R1SURcIiBcIm5hbWVcIiAgXCJzY29yZVwiXG4ifQ== -->
-<pre><code>[1] &quot;StuID&quot; &quot;name&quot;  &quot;score&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm93bmFtZXMoU3R1REYpXG5gYGAifQ== -->
-<pre class="r"><code>rownames(StuDF)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMVwiIFwiMlwiIFwiM1wiIFwiNFwiIFwiNVwiXG4ifQ== -->
-<pre><code>[1] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; &quot;5&quot;</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -439,8 +357,73 @@ levels(student$身高級距)</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbmxpYnJhcnkoZ29vZ2xlc2hlZXRzKVxuZ3NfYXV0aChuZXdfdXNlciA9IFRSVUUpXG5gYGAifQ== -->
+<pre class="r"><code>library(readr)
+library(googlesheets)
+gs_auth(new_user = TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRGlzYWJsaW5nIC5odHRyLW9hdXRoIGJ5IHJlbmFtaW5nIHRvIC5odHRyLW9hdXRoLVNVU1BFTkRFRFxuUmVtb3ZpbmcgZ29vZ2xlIHRva2VuIHN0YXNoZWQgaW50ZXJuYWxseSBpbiAnZ29vZ2xlc2hlZXRzJy5cbmh0dHB1diBub3QgaW5zdGFsbGVkLCBkZWZhdWx0aW5nIHRvIG91dC1vZi1iYW5kIGF1dGhlbnRpY2F0aW9uXG4ifQ== -->
+<pre><code>Disabling .httr-oauth by renaming to .httr-oauth-SUSPENDED
+Removing google token stashed internally in 'googlesheets'.
+httpuv not installed, defaulting to out-of-band authentication</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuNC9oZ0JDc0NxeUp3cjA1OC0wUUZxX25TM1pEa2VkQU5FQ211bVY5YzRuWkpmNmZTdVpDQTZybDEwXG5nc1N1cnZleTwtZ3Nfa2V5KFwiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREVcIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3RcbmBgYCJ9 -->
+<pre class="r"><code>4/hgBCsCqyJwr058-0QFq_nS3ZDkedANECmumV9c4nZJf6fSuZCA6rl10
+gsSurvey&lt;-gs_key(&quot;1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE&quot;)  #download sheet information as an object</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU2hlZXQgc3VjY2Vzc2Z1bGx5IGlkZW50aWZpZWQ6IFwipf6vWrNxsFS//SAoUmVzcG9uc2VzKVwiXG4ifQ== -->
+<pre><code>Sheet successfully identified: &quot;愼㸵昼㹥愼㹦Z戼㸳q戼㸰T戼㹦昼㹤 (Responses)&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldFxuYGBgIn0= -->
+<pre class="r"><code>classSurvey&lt;-gs_read(gsSurvey,ws=1) #access the 1st worksheet</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQWNjZXNzaW5nIHdvcmtzaGVldCB0aXRsZWQgJ0Zvcm0gUmVzcG9uc2VzIDEnLlxuIn0= -->
+<pre><code>Accessing worksheet titled 'Form Responses 1'.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Eb3dubG9hZGluZzogMi4yIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjIga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMyBrQiAgICAgXG5Eb3dubG9hZGluZzogMi4zIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjMga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMyBrQiAgICAgXG4ifQ== -->
+<pre><code>
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     
+Downloading: 2.3 kB     
+Downloading: 2.3 kB     
+Downloading: 2.3 kB     
+Downloading: 2.3 kB     </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBFbWFpbCBBZGRyZXNzYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqW2mVyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgvse4uSA9IGNvbF9pbnRlZ2VyKCksXG4gIKl+pu2mYabmrEawzyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqcqnTyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgpbu+x7TBvsekwLzGID0gY29sX2ludGVnZXIoKSxcbiAgpbu+x7TBpdirZaR3sNGlW6SnvdKlfqyhsMogPSBjb2xfY2hhcmFjdGVyKClcbilcbiJ9 -->
+<pre><code>Parsed with column specification:
+cols(
+  Timestamp = col_character(),
+  `Email Address` = col_character(),
+  愼㸹m愼㸶W = col_character(),
+  戼㹥Ǹ戼㸹 = col_integer(),
+  愼㸹~愼㸶攼㹤愼㸶a愼㸶攼㸶愼㹣F戼㸰挼㹦 = col_character(),
+  愼㸹ʧO = col_character(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱戼㹥Ǥ挼㸰戼㹣挼㸶 = col_integer(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱愼㸵ثe愼㸴w戼㸰ѥ[愼㸴愼㸷戼㹤ҥ~愼㹣愼㸱戼㸰挼㹡 = col_character()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoY2xhc3NTdXJ2ZXkpXG5gYGAifQ== -->
+<pre class="r"><code>class(classSurvey)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwidGJsX2RmXCIgICAgIFwidGJsXCIgICAgICAgIFwiZGF0YS5mcmFtZVwiXG4ifQ== -->
+<pre><code>[1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGltKGNsYXNzU3VydmV5KVxuYGBgIn0= -->
+<pre class="r"><code>dim(classSurvey)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDU5ICA4XG4ifQ== -->
+<pre><code>[1] 59  8</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMzEiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHIpDQpsaWJyYXJ5KGdvb2dsZXNoZWV0cykNCmdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKQ0KZ3NTdXJ2ZXk8LWdzX2tleSgiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREUiKSAgI2Rvd25sb2FkIHNoZWV0IGluZm9ybWF0aW9uIGFzIGFuIG9iamVjdA0KY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldA0KY2xhc3MoY2xhc3NTdXJ2ZXkpDQpTdHVERiA8LSBkYXRhLmZyYW1lKA0KICBTdHVJRD1jKDEsMiwzLDQsNSksDQogIG5hbWU9Yygi5bCP5piOIiwi5aSn6ZuEIiwi6IOW6JmOIiwi5bCP5pawIiwi5aSn55m9IiksDQogIHNjb3JlPWMoODAsNjAsOTAsNzAsNTApDQogICkNClN0dURGIA0KbmFtZXMoU3R1REYpIA0KY29sbmFtZXMoU3R1REYpDQpyb3duYW1lcyhTdHVERikNCmBgYA0KDQpgYGB7cn0NClN0dURGWzEsMl0NClN0dURGWywyXQ0KU3R1REZbMSxdDQpTdHVERltjKDEsNCksXQ0KU3R1REZbYygxLDQpLGMoMiwzKV0NCmBgYA0KDQpgYGB7cn0NClN0dURGW2MoMSw0KSxdDQpTdHVERlstYygxLDQpLF0NCmBgYA0KDQpgYGB7cn0NCmE8LWMoVCxULEYsRixULEYsRikNCnN1bShhKQ0KYGBgDQoNCmBgYHtyfQ0KbmFtZXMoU3R1REYpDQpgYGANCg0KYGBge3J9DQpuYW1lcyhTdHVERikgPC0gYygi5a246JmfIiwi5aeT5ZCNIiwi5oiQ57i+IikNCm5hbWVzKFN0dURGKQ0KYGBgDQoNCmBgYHtyfQ0KbGlicmFyeShyZWFkcikNCnN0dWRlbnQgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvc3R1ZGVudC5jc3YiKQ0KbGlicmFyeShkcGx5cikNCmxpYnJhcnkobWFncml0dHIpDQpzdHVkZW50ICU8PiUgbXV0YXRlKA0KICDouqvpq5jntJrot509Y3V0KOi6q+mrmCxjKDAsMTUwLDE1NSwxNjAsMTY1LDE3MCwxNzUsMTgwLDE4NSwyMDApKSkNCmxldmVscyhzdHVkZW50JOi6q+mrmOe0mui3nSkNCmBgYA0KDQpgYGB7cn0NCmxldmVscyhzdHVkZW50JOi6q+mrmOe0mui3nSkgPC0gYygi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgIuS4reetieWAi+WtkCIsIuS4reetieWAi+WtkCIsIumrmOWAi+WtkCIsIumrmOWAi+WtkCIpDQpsZXZlbHMoc3R1ZGVudCTouqvpq5jntJrot50pDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMzEiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHIpDQpsaWJyYXJ5KGdvb2dsZXNoZWV0cykNCmdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKQ0KZ3NTdXJ2ZXk8LWdzX2tleSgiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREUiKSAgI2Rvd25sb2FkIHNoZWV0IGluZm9ybWF0aW9uIGFzIGFuIG9iamVjdA0KY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldA0KY2xhc3MoY2xhc3NTdXJ2ZXkpDQoNCmBgYA0KDQpgYGB7cn0NClN0dURGWzEsMl0NClN0dURGWywyXQ0KU3R1REZbMSxdDQpTdHVERltjKDEsNCksXQ0KU3R1REZbYygxLDQpLGMoMiwzKV0NCmBgYA0KDQpgYGB7cn0NClN0dURGW2MoMSw0KSxdDQpTdHVERlstYygxLDQpLF0NCmBgYA0KDQpgYGB7cn0NCmE8LWMoVCxULEYsRixULEYsRikNCnN1bShhKQ0KYGBgDQoNCmBgYHtyfQ0KbmFtZXMoU3R1REYpDQpgYGANCg0KYGBge3J9DQpuYW1lcyhTdHVERikgPC0gYygi5a246JmfIiwi5aeT5ZCNIiwi5oiQ57i+IikNCm5hbWVzKFN0dURGKQ0KYGBgDQoNCmBgYHtyfQ0KbGlicmFyeShyZWFkcikNCnN0dWRlbnQgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS90cGVtYXJ0aW4vY291cnNlLTEwNy0xLXByb2dyYW1taW5nLWZvci1kYXRhLXNjaWVuY2UvbWFzdGVyL2RhdGEvc3R1ZGVudC5jc3YiKQ0KbGlicmFyeShkcGx5cikNCmxpYnJhcnkobWFncml0dHIpDQpzdHVkZW50ICU8PiUgbXV0YXRlKA0KICDouqvpq5jntJrot509Y3V0KOi6q+mrmCxjKDAsMTUwLDE1NSwxNjAsMTY1LDE3MCwxNzUsMTgwLDE4NSwyMDApKSkNCmxldmVscyhzdHVkZW50JOi6q+mrmOe0mui3nSkNCmBgYA0KDQpgYGB7cn0NCmxldmVscyhzdHVkZW50JOi6q+mrmOe0mui3nSkgPC0gYygi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwi5bCP5YCL5a2QIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgIuS4reetieWAi+WtkCIsIuS4reetieWAi+WtkCIsIumrmOWAi+WtkCIsIumrmOWAi+WtkCIpDQpsZXZlbHMoc3R1ZGVudCTouqvpq5jntJrot50pDQpgYGANCg0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHIpDQpsaWJyYXJ5KGdvb2dsZXNoZWV0cykNCmdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKQ0KZ3NTdXJ2ZXk8LWdzX2tleSgiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREUiKSAgI2Rvd25sb2FkIHNoZWV0IGluZm9ybWF0aW9uIGFzIGFuIG9iamVjdA0KY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldA0KY2xhc3MoY2xhc3NTdXJ2ZXkpDQoNCmBgYA0KDQpgYGB7cn0NCmRpbShjbGFzc1N1cnZleSkNCmBgYA0KDQoNCg0K</div>
 
 
 
