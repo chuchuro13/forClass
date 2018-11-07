@@ -2,20 +2,20 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1541578609865.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1186979766",
+    "hash" : "2895623196",
     "id" : "30331DE3",
     "lastKnownWriteTime" : 1541095350,
-    "last_content_update" : 1541578626945,
+    "last_content_update" : 1541579317412,
     "path" : "C:/Users/USER/Desktop/yuyu/R/試用.Rmd",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "141,21",
-        "scrollLine" : "106"
+        "cursorPosition" : "142,28",
+        "scrollLine" : "134"
     },
-    "relative_order" : 6,
+    "relative_order" : 5,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_markdown"

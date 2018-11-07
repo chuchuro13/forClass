@@ -8,14 +8,14 @@
     "hash" : "0",
     "id" : "D95BB558",
     "lastKnownWriteTime" : 1541576541,
-    "last_content_update" : 1541578582404,
+    "last_content_update" : 1541580948973,
     "path" : "C:/Users/USER/Desktop/yuyu/R/Exercise4-410773076.Rmd",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "28,31",
-        "scrollLine" : "21"
+        "cursorPosition" : "34,52",
+        "scrollLine" : "24"
     },
-    "relative_order" : 2,
+    "relative_order" : 4,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_markdown"

@@ -1,5 +1,5 @@
-"0","sum(gsHW2ws$ans1,na.rm = TRUE)/45"
+"0","mean(gsHW2ws$ans1,na.rm = TRUE)"
 "1","[1]"
-"1"," 0.4666667"
+"1"," 0.5121951"
 "1","
 "

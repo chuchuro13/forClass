@@ -1,0 +1,4 @@
+"0","colMeans(stringr::str_which(colnames(gsHW2ws),""ans""),na.rm=T)"
+"2","Error in colMeans(stringr::str_which(colnames(gsHW2ws), ""ans""), na.rm = T) : 
+  'x' must be an array of at least two dimensions
+"
