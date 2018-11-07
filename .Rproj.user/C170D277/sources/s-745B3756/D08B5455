@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1800810492",
+    "hash" : "3705340895",
     "id" : "D08B5455",
     "lastKnownWriteTime" : 1541573872,
-    "last_content_update" : 1541573873294,
+    "last_content_update" : 1541575743066,
     "path" : "~/GitHub/forClass/2018-11-07.Rmd",
     "project_path" : "2018-11-07.Rmd",
     "properties" : {
         "chunk_output_type" : "inline",
-        "cursorPosition" : "5,0",
+        "cursorPosition" : "28,20",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
