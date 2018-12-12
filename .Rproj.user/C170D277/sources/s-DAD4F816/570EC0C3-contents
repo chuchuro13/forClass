@@ -1,0 +1,16 @@
+---
+title: "2018-12-12"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+libraryData <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/library100_102.csv")
+```
+
+```{r}
+library(stringr)
+libraryData$書籍館藏地 %>% as.factor %>% levels -> storageLocations
+storageLocations
+```
+
