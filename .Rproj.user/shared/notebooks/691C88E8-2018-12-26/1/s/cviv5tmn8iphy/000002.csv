@@ -1,0 +1,103 @@
+"0","install.packages(""plotly"")"
+"2","Installing package into ¡¥C:/Users/USER/Documents/R/win-library/3.5¡¦
+(as ¡¥lib¡¦ is unspecified)
+"
+"2","also installing the dependencies ¡¥httpuv¡¦, ¡¥xtable¡¦, ¡¥sourcetools¡¦, ¡¥shiny¡¦, ¡¥later¡¦, ¡¥hexbin¡¦, ¡¥crosstalk¡¦, ¡¥promises¡¦
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/httpuv_1.4.5.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1183477 bytes (1.1 MB)
+"
+"2","downloaded 1.1 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/xtable_1.8-3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 756006 bytes (738 KB)
+"
+"2","downloaded 738 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/sourcetools_0.1.7.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 530523 bytes (518 KB)
+"
+"2","downloaded 518 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/shiny_1.2.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 4528403 bytes (4.3 MB)
+"
+"2","downloaded 4.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/later_0.7.5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 617770 bytes (603 KB)
+"
+"2","downloaded 603 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/hexbin_1.27.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 836493 bytes (816 KB)
+"
+"2","downloaded 816 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/crosstalk_1.0.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 661661 bytes (646 KB)
+"
+"2","downloaded 646 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/promises_1.0.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 692349 bytes (676 KB)
+"
+"2","downloaded 676 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/plotly_4.8.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 2434724 bytes (2.3 MB)
+"
+"2","downloaded 2.3 MB
+
+"
+"1","package â€˜httpuvâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜xtableâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜sourcetoolsâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜shinyâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜laterâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜hexbinâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜crosstalkâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜promisesâ€™ successfully unpacked and MD5 sums checked
+"
+"1","package â€˜plotlyâ€™ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1","The downloaded binary packages are in
+	C:\Users\USER\AppData\Local\Temp\RtmpqsXYa7\downloaded_packages"
+"1","
+"
